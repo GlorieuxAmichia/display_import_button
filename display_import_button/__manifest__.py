@@ -7,7 +7,7 @@
 		This module is used to manage the display of the "import" button on your
 		list, form, kanban view, according to your needs.
 	""",
-	'author': "SLife (AKA AMICHIA FREJUS ARNAUD)",
+	'author': "AKA AMICHIA FREJUS ARNAUD",
 	'category': 'web',
 	'version': '1.0',
 	'depends': ['web'],

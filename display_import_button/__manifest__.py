@@ -2,7 +2,7 @@
 {
 	'name': "Display Import Button",
 	'sequence': 0,
-	'summary': """Display Import Button""",
+	'summary': """To Use To Display Import Button or Not""",
 	'description': """
 		This module is used to manage the display of the "import" button on your
 		list, form, kanban view, according to your needs.

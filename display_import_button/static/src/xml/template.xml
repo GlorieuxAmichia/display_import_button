@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="sirh_template" xml:space="preserve">
 
+  <t t-extend="ListView.buttons">
+    <t t-jquery="div.o_list_buttons" t-operation="replace">
+      <div class="o_list_buttons">
+        <t t-if="widget.options.addable and (widget.is_action_enabled('create') or widget.is_action_enabled('import'))">
+          <button t-if="widget.is_action_enabled('create')" type="button" class="btn btn-primary btn-sm o_list_button_add" accesskey="c">
+            <t t-esc="widget.options.addable"/>
+          </button>
+        </t>
+        <button type="button" class="btn btn-primary btn-sm o_list_button_save" accesskey="s">
+            Save
+        </button>
+        <button type="button" class="btn btn-default btn-sm o_list_button_discard" accesskey="j">
+            Discard
+        </button>
+      </div>
+    </t>
+  </t>
+
   <t t-extend="ImportView.import_button">
     <t t-jquery=".btn.btn-sm.btn-default.o_button_import" t-operation="replace">
       <button t-if="widget.is_action_enabled('import')" type="button" class="btn btn-sm btn-default o_button_import">

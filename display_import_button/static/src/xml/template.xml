@@ -2,24 +2,11 @@
 <templates id="sirh_template" xml:space="preserve">
 
   <t t-extend="ImportView.import_button">
-    <t t-jquery=".btn.btn-sm.btn-default.o_button_import" t-operation="replace"/>
-  </t>
-
-  <t t-name="ImportView.display_import_button">
-    <button t-if="widget and widget.is_action_enabled('import')" type="button" class="btn btn-sm btn-primary o_button_import">
-        Import
-    </button>
-  </t>
-
-  <t t-extend="ListView.buttons">
-    <t t-jquery=".o_list_buttons" t-operation="append">
-      <t t-call="ImportView.display_import_button"/>
+    <t t-jquery=".btn.btn-sm.btn-default.o_button_import" t-operation="replace">
+      <button t-if="widget.is_action_enabled('import')" type="button" class="btn btn-sm btn-default o_button_import">
+          Import
+      </button>
     </t>
   </t>
 
-  <t t-extend="KanbanView.buttons">
-    <t t-jquery="button.o-kanban-button-new" t-operation="after">
-      <t t-call="ImportView.display_import_button"/>
-    </t>
-  </t>
 </templates>

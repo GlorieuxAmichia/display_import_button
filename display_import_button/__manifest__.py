@@ -12,9 +12,6 @@
 	'version': '1.0',
 	'license': 'AGPL-3',
 	'depends': ['web'],
-	'data': [
-		'views/import_template.xml',
-	],
 	'images': [
 		'static/src/img/main_1.png',
 		'static/src/img/main_screenshot.png'

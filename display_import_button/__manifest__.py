@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-	'name': "Display Import Button",
+	'name': "Remove Import Button",
 	'sequence': 0,
-	'summary': """To Use To Display Import Button or Not""",
+	'summary': """Use To Display or Not Import Button""",
 	'description': """
 		This module is used to manage the display of the "import" button on your
 		list, form, kanban view, according to your needs.
@@ -10,6 +10,7 @@
 	'author': "AKA AMICHIA FREJUS ARNAUD",
 	'category': 'web',
 	'version': '1.0',
+	'license': 'AGPL-3',
 	'depends': ['web'],
 	'data': [
 		'views/import_template.xml',

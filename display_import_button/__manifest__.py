@@ -2,7 +2,7 @@
 {
 	'name': "Remove Import Button",
 	'sequence': 0,
-	'summary': """Use To Display or Not Import Button""",
+	'summary': """Use To Display or Not Import Button on Your Tree, Kanban and Form Views""",
 	'description': """
 		This module is used to manage the display of the "import" button on your
 		list, form, kanban view, according to your needs.

@@ -7,7 +7,7 @@
 		This module is used to manage the display of the "import" button on your
 		list, form, kanban view, according to your needs.
 	""",
-	'author': "AKA AMICHIA FREJUS ARNAUD",
+	'author': "SLife Organization, Odoo Community Association (OCA)",
 	'category': 'web',
 	'version': '1.0',
 	'license': 'AGPL-3',

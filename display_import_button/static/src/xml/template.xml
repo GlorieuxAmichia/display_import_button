@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="sirh_template" xml:space="preserve">
-
   <t t-extend="ListView.buttons">
-    <t t-jquery="." t-operation="replace"/>
-      <t t-if="!widget.no_leaf and widget.options.action_buttons !== false and widget.options.addable and (widget.is_action_enabled('create') or widget.is_action_enabled('import'))">
-        <div class="oe_list_buttons">
-            <button t-if="widget.is_action_enabled('create')" type="button" class="btn btn-sm btn-primary o_list_button_add" accesskey="C">
-                <t t-esc="widget.options.addable"/>
-            </button>
-            <!-- <button t-if="widget.is_action_enabled('import')" type="button" class="btn btn-sm btn-default o_list_button_import">
-                Import
-            </button> -->
-            <!-- <button type="button" class="btn btn-primary btn-sm o_list_button_save" accesskey="S">
-                Save
-            </button>
-            <button type="button" class="btn btn-default btn-sm o_list_button_discard" accesskey="D">
-                Discard
-            </button> -->
-        </div>
-      </t>
+    <t t-jquery="t" t-operation="replace">
+      <div class="oe_list_buttons">
+        <t t-if="!widget.no_leaf and widget.options.action_buttons !== false and widget.options.addable and widget.is_action_enabled('create')">
+          <button type="button" class="btn btn-sm btn-primary o_list_button_add" accesskey="C">
+              <t t-esc="widget.options.addable"/>
+          </button>
+          <button type="button" class="btn btn-primary btn-sm o_list_button_save" accesskey="S">
+              Save
+          </button>
+          <button type="button" class="btn btn-default btn-sm o_list_button_discard" accesskey="D">
+              Discard
+          </button>
+        </t>
+        <button t-if="widget.is_action_enabled('import')" type="button" class="btn btn-sm btn-default o_list_button_import">
+            Import
+        </button>
+      </div>
     </t>
   </t>
-
 </templates>

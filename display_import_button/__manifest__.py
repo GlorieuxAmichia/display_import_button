@@ -8,7 +8,7 @@
 		list, form, kanban view, according to your needs.
 	""",
 	'author': "SLife Organization, Amichia Fréjus Arnaud AKA",
-	"website": "https://slifeorganization.com/",
+	"website": "https://slifeorganization.com",
 	'category': 'web',
 	'version': '1.0',
 	'license': 'AGPL-3',
